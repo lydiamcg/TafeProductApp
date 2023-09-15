@@ -42,6 +42,10 @@ namespace ProductApps
                 decimal totalChargeWrap = totalChargeDelivery + 5;
 
                 totalChargeWrapTextBox.Text = totalChargeWrap.ToString("C");
+
+                decimal totalChargeGST = totalChargeWrap * 1.1m;
+
+                totalChargeGSTTextBox.Text = totalChargeGST.ToString("C");
             }
             catch (FormatException)
             {
